@@ -15,8 +15,10 @@ public class CardInfo : ScriptableObject
     public int id;
     public string cardName;
     public string description;
+    public CardType typeCard = CardType.Utility;
 
     public Sprite imagen;
+    public int hp;
 
 
 }
