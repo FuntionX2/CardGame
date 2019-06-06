@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b6c4c2ded3167b49b3e28f53d55e129, type: 3}
-  m_Name: Enemy1
+  m_Name: Slime
   m_EditorClassIdentifier: 
   id: 0
-  cardName: 
-  description: 
-  typeCard: 3
-  imagen: {fileID: 0}
+  cardName: Slime
+  description: It may be cute but 2 damage It's 2 damage
+  typeCard: 0
+  imagen: {fileID: 21300000, guid: f86f525de5ebd0143a6beb04d57cf977, type: 3}
+  hp: 2

@@ -17,23 +17,32 @@ public class CardLoader : MonoBehaviour
     public Sprite imagen;
     public CardInfo.CardType typeCard;
     public int hp;
+    public GameObject noName;
     
     void Start()
     {
         imagenSource = transform.GetComponent<Image>();
         nameCard = transform.Find("Name").GetComponent<TextMeshProUGUI>();
-        hpText = transform.Find("Image/hp").GetComponent<TextMeshProUGUI>();
-        hp = cardinfo.hp;
-        id = cardinfo.id;
         nameCard.text = cardinfo.cardName;
-        description = cardinfo.description;
+        hpText = transform.Find("Image/hp").GetComponent<TextMeshProUGUI>();
         imagen = cardinfo.imagen;
         imagenSource.sprite = imagen;
+        hp = cardinfo.hp;
+        id = cardinfo.id;
+        description = cardinfo.description;
         typeCard = cardinfo.typeCard;
-
+        noName = transform.Find("Name").gameObject;
+        if(typeCard==CardInfo.CardType.Player)
+        {
+            noName.SetActive(false);
+        }
     }
     void Update() {
         hpText.text = hp.ToString();
+        if(hp<=0)
+        {
+            Destroy(gameObject);
+        }
     }
 
 }

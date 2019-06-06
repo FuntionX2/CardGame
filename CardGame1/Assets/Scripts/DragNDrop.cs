@@ -5,9 +5,12 @@ using UnityEngine.EventSystems;
 
 public class DragNDrop : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDragHandler
 {
+    Transform parentReturn = null;
     public void OnBeginDrag(PointerEventData eventData)
     {
-
+        parentReturn = this.transform.parent;
+        this.transform.SetParent(this.transform.parent.parent);
+        GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -15,6 +18,8 @@ public class DragNDrop : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDrag
     }
     public void OnEndDrag(PointerEventData eventData)
     {
+        this.transform.SetParent(parentReturn);
+        GetComponent<CanvasGroup>().blocksRaycasts = true;
 
     }
 }
