@@ -87,7 +87,6 @@ GameObject:
   - component: {fileID: 7117896016189642135}
   - component: {fileID: 7117896016189642120}
   - component: {fileID: 7117896016189642134}
-  - component: {fileID: 8557750533639775372}
   - component: {fileID: 8304227158668354509}
   - component: {fileID: 5650548348528182026}
   m_Layer: 5
@@ -175,18 +174,6 @@ MonoBehaviour:
   m_FlexibleWidth: 0
   m_FlexibleHeight: 0
   m_LayoutPriority: 1
---- !u!114 &8557750533639775372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7117896016189642122}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9809bc968beef6d40a0141d233beb28f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8304227158668354509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd84b003d8323df40a7fc89a61e8ae62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardinfo: {fileID: 0}
+  cardinfo: {fileID: 11400000, guid: df2c8d00f5ce834439e370788fc1696a, type: 2}
   id: 0
   nameCard: {fileID: 0}
   hpText: {fileID: 0}

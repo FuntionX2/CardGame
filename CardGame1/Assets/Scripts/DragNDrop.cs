@@ -8,9 +8,18 @@ public class DragNDrop : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDrag
     Transform parentReturn = null;
     public void OnBeginDrag(PointerEventData eventData)
     {
-        parentReturn = this.transform.parent;
-        this.transform.SetParent(this.transform.parent.parent);
-        GetComponent<CanvasGroup>().blocksRaycasts = false;
+        if(GetComponent<CardLoader>().typeCard== CardInfo.CardType.Utility)
+        {
+            parentReturn = this.transform.parent;
+            this.transform.SetParent(this.transform.parent.parent.parent);
+            GetComponent<CanvasGroup>().blocksRaycasts = false;
+        }
+        else
+        {
+            parentReturn = this.transform.parent;
+            this.transform.SetParent(this.transform.parent.parent);
+            GetComponent<CanvasGroup>().blocksRaycasts = false;
+        }
     }
     public void OnDrag(PointerEventData eventData)
     {
