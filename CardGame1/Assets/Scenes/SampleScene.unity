@@ -910,6 +910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d5dd87d9df59644d8840372ecb8efe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsTXT: {fileID: 0}
 --- !u!114 &947886910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2085,6 +2086,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1964004030}
     m_Modifications:
+    - target: {fileID: 2701984191339601838, guid: 549278061aa4e3e4bad53b760fa8c131,
+        type: 3}
+      propertyPath: pointsTXT
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 9179771510276567141, guid: 549278061aa4e3e4bad53b760fa8c131,
         type: 3}
       propertyPath: m_Name
@@ -2194,6 +2200,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179771508995773101, guid: 549278061aa4e3e4bad53b760fa8c131,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179771508995773101, guid: 549278061aa4e3e4bad53b760fa8c131,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179771509544804886, guid: 549278061aa4e3e4bad53b760fa8c131,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9179771509544804886, guid: 549278061aa4e3e4bad53b760fa8c131,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 549278061aa4e3e4bad53b760fa8c131, type: 3}

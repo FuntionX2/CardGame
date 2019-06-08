@@ -8,11 +8,24 @@ public class RandomSpawn : MonoBehaviour
     private string[] randomPick = {CardInfo.CardType.Enemy.ToString(),CardInfo.CardType.Enemy.ToString(),CardInfo.CardType.Enemy.ToString(),CardInfo.CardType.Utility.ToString()};
     private int lenght=0;
     private int result;
+    public GameObject pointsTXT;
     void Start()
     {
         Debug.Log(randomPick.Length.ToString());
-        
+        pointsTXT = GameObject.Find("Points");
         //1-Enemy 2-Potion
+        Spawn();
+
+    }
+    void Update()
+    {   if(transform.childCount==0)
+        {
+            pointsTXT.GetComponent<PointSystem>().points = pointsTXT.GetComponent<PointSystem>().points + 1;
+        }
+        Spawn();
+    }
+    void Spawn()
+    {
         if(transform.childCount==0)
         {
             for (int i = 0; i < randomNumberField(); i++)
@@ -27,7 +40,6 @@ public class RandomSpawn : MonoBehaviour
                 }
             }
         }
-
     }
     string returnRandom(string[] randomPick)
     {
