@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class DragNDrop : MonoBehaviour, IBeginDragHandler, IDragHandler,IEndDragHandler
 {
-    Transform parentReturn = null;
+    public Transform parentReturn = null;
     private GameObject FieldPotion;
 
     void Start() {

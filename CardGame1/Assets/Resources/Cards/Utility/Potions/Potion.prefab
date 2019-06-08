@@ -487,6 +487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9809bc968beef6d40a0141d233beb28f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parentReturn: {fileID: 0}
 --- !u!114 &9179771510276567138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -508,6 +509,7 @@ MonoBehaviour:
   imagen: {fileID: 0}
   typeCard: 0
   hp: 0
+  genHP: 0
   noName: {fileID: 0}
 --- !u!225 &9179771510276567150
 CanvasGroup:
@@ -533,3 +535,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2fc9f9c79923548a6a94b3f836ab93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsTXT: {fileID: 0}

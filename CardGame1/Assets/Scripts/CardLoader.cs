@@ -17,6 +17,7 @@ public class CardLoader : MonoBehaviour
     public Sprite imagen;
     public CardInfo.CardType typeCard;
     public int hp;
+    public int genHP;
     public GameObject noName;
     
     void Start()
@@ -27,6 +28,7 @@ public class CardLoader : MonoBehaviour
         hpText = transform.Find("Image/hp").GetComponent<TextMeshProUGUI>();
         imagen = cardinfo.imagen;
         imagenSource.sprite = imagen;
+        genHP = cardinfo.hp;
         hp = cardinfo.hp;
         id = cardinfo.id;
         description = cardinfo.description;
