@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6c4c2ded3167b49b3e28f53d55e129, type: 3}
   m_Name: HealthPotion
   m_EditorClassIdentifier: 
-  id: 0
-  cardName: 
-  description: 
+  id: 4
+  cardName: Health Potion
+  description: Glubglubglub
   typeCard: 3
-  imagen: {fileID: 0}
-  hp: 0
+  imagen: {fileID: 21300000, guid: aebe8c52d1025d644a527481991605ba, type: 3}
+  hp: 5

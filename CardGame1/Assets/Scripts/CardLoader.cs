@@ -34,7 +34,7 @@ public class CardLoader : MonoBehaviour
         noName = transform.Find("Name").gameObject;
         if(typeCard==CardInfo.CardType.Player)
         {
-            noName.SetActive(false);
+            Destroy(noName);
         }
     }
     void Update() {

@@ -408,11 +408,11 @@ GameObject:
   - component: {fileID: 9179771510276567136}
   - component: {fileID: 9179771510276567137}
   - component: {fileID: 9179771510276567138}
-  - component: {fileID: 9179771510276567139}
   - component: {fileID: 9179771510276567150}
+  - component: {fileID: 2701984191339601838}
   m_Layer: 5
   m_Name: Potion
-  m_TagString: Untagged
+  m_TagString: Potion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -509,19 +509,6 @@ MonoBehaviour:
   typeCard: 0
   hp: 0
   noName: {fileID: 0}
---- !u!114 &9179771510276567139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9179771510276567141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2fc9f9c79923548a6a94b3f836ab93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
 --- !u!225 &9179771510276567150
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -534,3 +521,15 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &2701984191339601838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9179771510276567141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d2fc9f9c79923548a6a94b3f836ab93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -7,26 +7,10 @@ using TMPro;
 
 public class DropCard : MonoBehaviour, IDropHandler
 {
-    private CardLoader takeInfo;
-    public GameObject player;
-    private CardLoader playerInfo;
-    private TextMeshProUGUI hp;
-    
     void IDropHandler.OnDrop(PointerEventData eventData)
     {
-        player = GameObject.Find("Player(Clone)");
-        takeInfo = gameObject.transform.GetComponent<CardLoader>();
-        if(takeInfo.typeCard == CardInfo.CardType.Enemy)
-        {
-            playerInfo = player.gameObject.GetComponent<CardLoader>();
-            playerInfo.hp = playerInfo.hp - takeInfo.hp;
-            takeInfo.hp = takeInfo.hp - playerInfo.hp;
-        }
-        if(takeInfo.typeCard == CardInfo.CardType.Utility)
-        {
-            playerInfo = player.gameObject.GetComponent<CardLoader>();
-            playerInfo.hp = playerInfo.hp + takeInfo.hp;
-            takeInfo.hp = takeInfo.hp-playerInfo.hp;
-        }
+        Debug.Log("Nombre de objecto tomado " + eventData.pointerDrag.name);
+        Debug.Log("Nombre del objecto donde cayó " + this.transform.name);
+        Debug.Log(eventData.pointerCurrentRaycast.gameObject.name);
     }
 }
